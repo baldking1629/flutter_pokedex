@@ -18,14 +18,14 @@ class Constants {
     return TextStyle(
       color: Colors.white,
       fontWeight: FontWeight.bold,
-      fontSize: _calculateFontSize(30),
+      fontSize: _calculateFontSize(22),
     );
   }
 
   static TextStyle getTypeChipTextStyle() {
     return TextStyle(
       color: Colors.white,
-      fontSize: _calculateFontSize(20),
+      fontSize: _calculateFontSize(16),
     );
   }
 

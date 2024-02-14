@@ -22,6 +22,10 @@ class Constants {
     );
   }
 
+  static RoundedRectangleBorder getChipBorder() {
+    return RoundedRectangleBorder(borderRadius: BorderRadius.circular(24));
+  }
+
   static TextStyle getTypeChipTextStyle() {
     return TextStyle(
       color: Colors.white,
@@ -33,7 +37,21 @@ class Constants {
     if (ScreenUtil().orientation == Orientation.portrait) {
       return size.sp;
     } else {
-      return (size*1.2).spMin;
+      return size.dg;
     }
+  }
+
+  static getPokeInfoTextStyle() {
+    return TextStyle(
+      fontSize: _calculateFontSize(16),
+      color: Colors.black,
+    );
+  }
+
+  static getPokeInfoLabelTextStyle() {
+    return TextStyle(
+        fontSize: _calculateFontSize(20),
+        color: Colors.black,
+        fontWeight: FontWeight.bold);
   }
 }
